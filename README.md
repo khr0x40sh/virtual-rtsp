@@ -9,6 +9,7 @@ Running this project as following:
     docker run -p 554:8554 \
     -e SOURCE_URL=file:///samples/highway-10min-640x480-1.mp4 \
     -v $(pwd)/samples:/samples \
+    -v $(pwd)/conf:/tmp \
     -d --restart=always kerberos/virtual-rtsp:1.0.6
 
 Will generate following demo RTSP url:
